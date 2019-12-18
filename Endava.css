@@ -1,67 +1,107 @@
 .menu {
-    display: inline-block;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ec581d;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 30px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: rgb(226, 146, 85);
-  }
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ec581d;
+  font-family: 'Libre Baskerville', serif;
+}
 
-  .images {
-    width: 280px;
-    display: block;
-  }
+li {
+  float: left;
+}
 
-  .row{
-display: flex;
-width: 100%;
-  }
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+  font-family: 'Libre Baskerville', serif;
+}
 
-  .first{
-    background-color: #f5cdbd;
-    color:black;
-    margin:50px;
-    padding: 55px;
-    width: 33.33%;
-    text-align: center;
-    display:inline-block;
-  }
+li a:hover {
+  background-color: rgb(226, 146, 85);
+}
 
-  .second{
-    background-color: #f5cdbd;
-    color:black;
-    margin:50px;
-    padding: 55px;
-    width: 33.33%;
-    text-align: center;
-    vertical-align: middle;
-    display:inline-block;
-  }
+.images {
+  width: 280px;
+  display: block;
+}
 
-  .third{
-    background-color: #f5cdbd;
-    color:black;
-    margin:50px;
-    padding: 55px;
-    width: 33.33%;
-    text-align: center;
-    display:inline-block;
-  }
+.row {
+  display: flex;
+  width: 100%;
+}
 
-  
+.first {
+  background-color: #f5cdbd;
+  color: black;
+  margin: 50px;
+  padding: 55px;
+  width: 33.33%;
+  text-align: center;
+  display: inline-block;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.second {
+  background-color: #f5cdbd;
+  color: black;
+  margin: 50px;
+  padding: 55px;
+  width: 33.33%;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.third {
+  background-color: #f5cdbd;
+  color: black;
+  margin: 50px;
+  padding: 55px;
+  width: 33.33%;
+  text-align: center;
+  display: inline-block;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.firsttable {
+  background: #f5cdbd;
+  color: black;
+  margin: 55px;
+  padding: 5px;
+  display: inline-block;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.secondtable {
+  background: #f5cdbd;
+  color: black;
+  margin: 55px;
+  padding: 5px;
+  display: inline-block;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.thirdtable {
+  background-color: #f5cdbd;
+  color: black;
+  margin: 55px;
+  padding: 5px;
+  display: inline-block;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.fourthtable{
+  background-color: #f5cdbd;
+  color: black;
+  margin: 55px;
+  padding: 5px;
+  display: inline-block;
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+}
