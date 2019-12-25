@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.header {
+  background-color: #3B5999;
+  padding: 0 10px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-right: 100px;
+}
+
+.login-form {
+  display: flex;
+  margin-right: 100px;
+}
+
+.email-box {
+  margin-right: 10px;
+}
+
+.login-form label {
+  color: white;
+  margin-right: 10px;
+  font-family: 'Lato', sans-serif;
+}
+
+.login-button{
+  margin-left: 10px;
+  padding: 0 15;
+}
