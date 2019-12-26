@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
+.registration{
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  color:#333;
+}
 .header {
   background-color: #3B5999;
   padding: 0 10px;
@@ -30,4 +35,47 @@
 .login-button{
   margin-left: 10px;
   padding: 0 15;
+}
+
+.table-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px 0;
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+.table-content-container{
+  padding: 50px 100px 100px;
+  -webkit-box-shadow: 0px 3px 30px -6px rgba(0,0,0,0.42);
+  -moz-box-shadow: 0px 3px 30px -6px rgba(0,0,0,0.42);
+  box-shadow: 0px 3px 30px -6px rgba(0,0,0,0.42);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.table-container table{
+  border-spacing: 10px;
+
+}
+
+.table-container table tr{
+  padding: 10px;
+}
+
+.gender{
+  display: flex;
+  justify-content: none;
+}
+
+.birthday{
+  display: flex;
+  justify-content: center;
+}
+
+.submit-button{
+  margin-top: 15px;
+  padding: 5;
 }
