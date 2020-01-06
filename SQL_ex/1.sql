@@ -1,0 +1,1 @@
+SELECT model, speed, hd FROM PC WHERE Price <500
