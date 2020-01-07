@@ -1,0 +1,1200 @@
+{
+  "id": "4afe74c1-6e66-4d86-8903-713da560073c",
+  "version": "2.0",
+  "name": "AT_moraru.md",
+  "url": "http://www.moraru.md/qa/",
+  "tests": [{
+    "id": "57ea8e3c-05f9-4abc-b931-04b08d440ddf",
+    "name": "Open site",
+    "commands": [{
+      "id": "0d685a82-d02c-4d3e-a50b-e6630ffc1a87",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.moraru.md/qa/",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f7146a3a-1be9-4098-9618-b323aed0995c",
+    "name": "Assert Title",
+    "commands": [{
+      "id": "ad813d75-4731-4e20-b50b-289de8b06644",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.moraru.md/qa/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56eda6b5-cab3-4d18-bac2-9923e6424d17",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Natours | Exciting tours for adventurous people",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "21a4ce31-8c98-4831-88ed-7a603d10ad86",
+    "name": "Assert Discover Tours Btn",
+    "commands": [{
+      "id": "efdc29d7-8f3d-4d00-b87d-1f3eb2665c8a",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.moraru.md/qa/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ebc142da-266e-46e9-925e-3a1a6608245a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=a[href=\"#section-tours\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c31a7157-5c67-4407-9416-cbe6f0ae3c95",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=a[href=\"#section-tours\"]",
+      "targets": [],
+      "value": "DISCOVER OUR TOURS"
+    }]
+  }, {
+    "id": "c5c72a56-bb97-464c-8edd-9cb10683e93c",
+    "name": "Assert Page Heading",
+    "commands": [{
+      "id": "c05e284a-c0ba-480d-acfe-6d5ab7fb8a78",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.moraru.md/qa/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae2bccc5-2bf0-488e-87ea-ee71da363de9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=span.heading-primary--main",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d26ea3d-058c-44e9-9f46-481f4eaece50",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=span.heading-primary--main",
+      "targets": [],
+      "value": "OUTDOORS"
+    }]
+  }, {
+    "id": "885a5fa2-5d1a-4000-bd45-f38b8a697e66",
+    "name": "Assert Page Heading Subtitle",
+    "commands": [{
+      "id": "1848f74b-ab32-4a8d-bbaf-eac9505eced5",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.moraru.md/qa/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da6e1dca-a471-45e7-a8b2-6672669d9793",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=span.heading-primary--sub",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6063fab-b540-4d1c-af79-e71583155386",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=span.heading-primary--sub",
+      "targets": [],
+      "value": "IS WHERE LIFE HAPPENS"
+    }]
+  }, {
+    "id": "c5be413b-91f7-45f2-ab06-7aa9c8b6941f",
+    "name": "Assert Navigation Btn",
+    "commands": [{
+      "id": "d4fac307-480f-4197-b0b7-426ed5f0df8d",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.moraru.md/qa/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4fd10b96-26a5-4de3-abb9-44322b3793a9",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6faf3ac-626f-4359-88d7-7e8ab1d01ec7",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.getElementById('navi-toggle').onclick = null;",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d51fe3ba-f459-4f5b-8eb1-b29391930f73",
+    "name": "Assert Heading Secondary",
+    "commands": [{
+      "id": "77aa8e45-ae94-4679-8219-f1e4e4c6f5c9",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.moraru.md/qa/#",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3cab0225-f1e3-411c-be71-5e585355c59f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.section-about .heading-secondary",
+      "targets": [
+        ["css=.section-about .heading-secondary", "css:finder"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9738293b-fbc1-43bc-bfbd-5dfee8de3f6b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.section-about .heading-secondary",
+      "targets": [
+        ["css=.section-about .heading-secondary", "css:finder"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "EXCITING TOURS FOR ADVENTUROUS PEOPLE"
+    }]
+  }, {
+    "id": "88c974c0-aa6a-4cf1-8a82-d23703df02d2",
+    "name": "Assert Heading Tertiary",
+    "commands": [{
+      "id": "a31261fe-65fe-4f14-a1b3-372345bbc414",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.moraru.md/qa/#",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d2ecd59b-e365-4f5e-9bc2-f0f82570f5c5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.navigation__item:nth-child(2) > .navigation__link",
+      "targets": [
+        ["css=.navigation__item:nth-child(2) > .navigation__link", "css:finder"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06d82b3c-9afd-48df-9ada-6150c30a343b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-1-of-2 > .heading-tertiary:nth-child(1)",
+      "targets": [
+        ["css=.col-1-of-2 > .heading-tertiary:nth-child(1)", "css:finder"],
+        ["xpath=//h3", "xpath:position"]
+      ],
+      "value": "YOU'RE GOING TO FALL IN LOVE WITH NATURE"
+    }, {
+      "id": "a5804222-79cf-4a39-99be-9d4a372efac3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-1-of-2 > .heading-tertiary:nth-child(3)",
+      "targets": [
+        ["css=.col-1-of-2 > .heading-tertiary:nth-child(3)", "css:finder"],
+        ["xpath=//h3[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77e36885-d593-433c-b7f3-9af50a882dd5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-1-of-2 > .heading-tertiary:nth-child(3)",
+      "targets": [
+        ["css=.col-1-of-2 > .heading-tertiary:nth-child(3)", "css:finder"],
+        ["xpath=//h3[2]", "xpath:position"]
+      ],
+      "value": "LIVE ADVENTURES LIKE YOU NEVER HAVE BEFORE"
+    }]
+  }, {
+    "id": "c71b2930-2ab7-4171-a883-854d68391827",
+    "name": "Assert Navigation Link",
+    "commands": [{
+      "id": "903f1dac-3ffb-44f6-a59c-ad792c18d275",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.moraru.md/qa/#",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb362455-7e7c-4054-a636-ec823ba77a50",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.navigation__item:nth-child(4) > .navigation__link",
+      "targets": [
+        ["css=.navigation__item:nth-child(4) > .navigation__link", "css:finder"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d224b4e-ae32-43fd-9d61-a426f6aa73b2",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Learn more →",
+      "targets": [
+        ["linkText=Learn more →", "linkText"],
+        ["css=.btn-text:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Learn more →')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"alert('Clicked `Learn more`');\"]", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[7]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Learn more →')]", "xpath:innerText"]
+      ],
+      "value": "Learn more →"
+    }, {
+      "id": "127b213c-4ebd-43c7-988a-7319adcad944",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navigation__item:nth-child(4) > .navigation__link",
+      "targets": [
+        ["css=.navigation__item:nth-child(4) > .navigation__link", "css:finder"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4ae146c1-a53e-49b9-9fa2-a29f80564be7",
+    "name": "Assert Feature boxes",
+    "commands": [{
+      "id": "239a763c-d3a6-4535-88b3-0f7912ed519d",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.moraru.md/qa/#",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16812f92-6768-4253-9027-a89d230945b8",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-1-of-4:nth-child(1) > .feature-box",
+      "targets": [
+        ["css=.col-1-of-4:nth-child(1) > .feature-box", "css:finder"],
+        ["xpath=//section[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e14c05be-3e9c-4ca9-aa58-391731093850",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.navigation__item:nth-child(4) span",
+      "targets": [
+        ["css=.navigation__item:nth-child(4) span", "css:finder"],
+        ["xpath=//li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'04')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "94280647-f3d9-4955-b825-3367bc1d7daf",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-1-of-4:nth-child(1) .heading-tertiary",
+      "targets": [
+        ["css=.col-1-of-4:nth-child(1) .heading-tertiary", "css:finder"],
+        ["xpath=//div/div/div/h3", "xpath:position"]
+      ],
+      "value": "EXPLORE THE WORLD"
+    }, {
+      "id": "ee792561-6807-477b-be91-c12d3e0345e3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-1-of-4:nth-child(2) > .feature-box",
+      "targets": [
+        ["css=.col-1-of-4:nth-child(2) > .feature-box", "css:finder"],
+        ["xpath=//section[2]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "815af92a-641d-42db-a152-1a9b1f311929",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.icon-basic-compass",
+      "targets": [
+        ["css=.icon-basic-compass", "css:finder"],
+        ["xpath=//div[2]/div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59c938a9-bdc9-4c0a-8a49-7285792aea03",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-1-of-4:nth-child(2) .heading-tertiary",
+      "targets": [
+        ["css=.col-1-of-4:nth-child(2) .heading-tertiary", "css:finder"],
+        ["xpath=//div/div[2]/div/h3", "xpath:position"]
+      ],
+      "value": "MEET NATURE"
+    }, {
+      "id": "35b21e23-5558-473e-9fa8-0fdcad34843d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-1-of-4:nth-child(3) > .feature-box",
+      "targets": [
+        ["css=.col-1-of-4:nth-child(3) > .feature-box", "css:finder"],
+        ["xpath=//div/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98260d20-f5d3-4827-9f45-a901ab4120e2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.icon-basic-map",
+      "targets": [
+        ["css=.icon-basic-map", "css:finder"],
+        ["xpath=//div[3]/div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cddac02-b0aa-411b-ac69-c73854fd7f2b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-1-of-4:nth-child(3) .heading-tertiary",
+      "targets": [
+        ["css=.col-1-of-4:nth-child(3) .heading-tertiary", "css:finder"],
+        ["xpath=//div[3]/div/h3", "xpath:position"]
+      ],
+      "value": "FIND YOUR WAY"
+    }, {
+      "id": "dec06c1c-6fa0-4bb9-b7a2-960e2ac4b059",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-1-of-4:nth-child(4) .heading-tertiary",
+      "targets": [
+        ["css=.col-1-of-4:nth-child(4) .heading-tertiary", "css:finder"],
+        ["xpath=//div[4]/div/h3", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7ea644b-8899-4081-8902-66dbd65688c4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.icon-basic-heart",
+      "targets": [
+        ["css=.icon-basic-heart", "css:finder"],
+        ["xpath=//div[4]/div/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "169c316b-34a1-444e-a91e-20ec83dde3a8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-1-of-4:nth-child(4) .heading-tertiary",
+      "targets": [
+        ["css=.col-1-of-4:nth-child(4) .heading-tertiary", "css:finder"],
+        ["xpath=//div[4]/div/h3", "xpath:position"]
+      ],
+      "value": "LIVE A HEALTHIER LIFE"
+    }]
+  }, {
+    "id": "8f09e629-a51a-4bef-8195-3905682263c5",
+    "name": "Assert Heading Secondary Title",
+    "commands": [{
+      "id": "546d1939-449f-4f19-8f30-55e02bc3128f",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.moraru.md/qa/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d72f664-6676-4c1c-8d7f-bc451b84c78d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#section-tours .heading-secondary",
+      "targets": [
+        ["css=#section-tours .heading-secondary", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div/h2", "xpath:idRelative"],
+        ["xpath=//section[3]/div/h2", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "34468a1a-ed0f-4d64-bf76-a85a770bd641",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#section-tours .heading-secondary",
+      "targets": [
+        ["css=#section-tours .heading-secondary", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div/h2", "xpath:idRelative"],
+        ["xpath=//section[3]/div/h2", "xpath:position"]
+      ],
+      "value": "MOST POPULAR TOURS"
+    }]
+  }, {
+    "id": "c95cded1-ae84-4c58-a210-26465b0fcd55",
+    "name": "Assert Card Pictures_Card Picture 1",
+    "commands": [{
+      "id": "6ef2dd57-0eee-40d8-b5e6-51f574eba50d",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.moraru.md/qa/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc554199-7d91-4145-87bf-df3dc3d3fe4e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.card__heading-span",
+      "targets": [
+        ["css=.navigation__item:nth-child(2) > .navigation__link", "css:finder"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40f342c6-b28f-4879-b7a9-91f542737479",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.card__heading-span",
+      "targets": [
+        ["css=.navigation__item:nth-child(2) > .navigation__link", "css:finder"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": "THE SEA EXPLORER"
+    }, {
+      "id": "c1296c1f-81d8-431b-821b-d3a93356bb81",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.card__details",
+      "targets": [
+        ["css=.navigation__item:nth-child(3) > .navigation__link", "css:finder"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0521f639-6c79-400c-8c4c-efd4d0457aa5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-1-of-3:nth-child(1) li:nth-child(1)",
+      "targets": [
+        ["css=.col-1-of-3:nth-child(1) li:nth-child(1)", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div/div/div/div[2]/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'3 day tours')]", "xpath:innerText"]
+      ],
+      "value": "3 day tours"
+    }, {
+      "id": "10d8373a-3f54-468c-8948-8c7d8e608338",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-1-of-3:nth-child(1) li:nth-child(2)",
+      "targets": [
+        ["css=.col-1-of-3:nth-child(1) li:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div/div/div/div[2]/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Up to 30 people')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c183a11b-3fa5-4273-a980-725b1a648798",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-1-of-3:nth-child(1) li:nth-child(2)",
+      "targets": [
+        ["css=.col-1-of-3:nth-child(1) li:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div/div/div/div[2]/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Up to 30 people')]", "xpath:innerText"]
+      ],
+      "value": "Up to 30 people"
+    }, {
+      "id": "aa9d4535-6f3f-467a-9560-eafab674df7b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-1-of-3:nth-child(1) li:nth-child(3)",
+      "targets": [
+        ["css=.col-1-of-3:nth-child(1) li:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div/div/div/div[2]/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Up to 30 people')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c453568-7ac5-4b9c-aaa7-b03b23ad0a77",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-1-of-3:nth-child(1) li:nth-child(3)",
+      "targets": [
+        ["css=.col-1-of-3:nth-child(1) li:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div/div/div/div[2]/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Up to 30 people')]", "xpath:innerText"]
+      ],
+      "value": "2 tour guides"
+    }, {
+      "id": "4f5f333c-aaf8-49b2-bca1-e8e358bf5e8c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-1-of-3:nth-child(1) li:nth-child(4)",
+      "targets": [
+        ["css=.col-1-of-3:nth-child(1) li:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div/div/div/div[2]/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Up to 30 people')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "709857e2-045b-48f7-91db-26fb79fb05e1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-1-of-3:nth-child(1) li:nth-child(4)",
+      "targets": [
+        ["css=.col-1-of-3:nth-child(1) li:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div/div/div/div[2]/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Up to 30 people')]", "xpath:innerText"]
+      ],
+      "value": "Sleep in cozy hotels"
+    }, {
+      "id": "3cd4f60a-d4c0-4b73-bc24-33bcfe50e192",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.card__side--back-1 .card__price-only",
+      "targets": [
+        ["css=.card__side--back-1 .card__price-only", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div/div/div[2]/div/div/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "175ab4bf-de12-4232-8925-445de3c134da",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.card__side--back-1 .card__price-only",
+      "targets": [
+        ["css=.card__side--back-1 .card__price-only", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div/div/div[2]/div/div/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/p", "xpath:position"]
+      ],
+      "value": "ONLY"
+    }, {
+      "id": "dcb5a538-9d23-46c8-8254-aa3dc1cec86b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.card__side--back-1 .card__price-value",
+      "targets": [
+        ["css=.card__side--back-1 .card__price-value", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div/div/div[2]/div/div/p[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'$297')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4eb5158-d355-4e10-b0ec-3a811563db80",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.card__side--back-1 .card__price-value",
+      "targets": [],
+      "value": "$297"
+    }, {
+      "id": "47950768-685a-4ed9-a25a-d460576e0171",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.card__side--back-1 .btn",
+      "targets": [
+        ["css=.card__side--back-1 .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Book now!')]", "xpath:link"],
+        ["xpath=//section[@id='section-tours']/div[2]/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#popup')]", "xpath:href"],
+        ["xpath=//div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62899b76-93ea-48c8-b2eb-9af969c24445",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.card__side--back-1 .btn",
+      "targets": [],
+      "value": "BOOK NOW!"
+    }, {
+      "id": "404a5192-3174-4880-8081-aae2cf14a674",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card__side--back-1 .btn",
+      "targets": [
+        ["css=.card__side--back-1 .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Book now!')]", "xpath:link"],
+        ["xpath=//section[@id='section-tours']/div[2]/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#popup')]", "xpath:href"],
+        ["xpath=//div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff64f6c3-9158-4ae8-acdb-b56a6921fd9f",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Book now')])[5]", "xpath:link"],
+        ["xpath=//a[@onclick=\"alert('Clicked `Book now`');\"]", "xpath:attributes"],
+        ["xpath=//div[@id='popup']/div/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[21]", "xpath:href"],
+        ["xpath=//div[2]/a[2]", "xpath:position"]
+      ],
+      "value": "54,25.86175537109375"
+    }, {
+      "id": "f6e2dbfa-8bf2-475a-be89-872bd7f40d5c",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Book now')])[5]", "xpath:link"],
+        ["xpath=//a[@onclick=\"alert('Clicked `Book now`');\"]", "xpath:attributes"],
+        ["xpath=//div[@id='popup']/div/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[21]", "xpath:href"],
+        ["xpath=//div[2]/a[2]", "xpath:position"]
+      ],
+      "value": "54,25.86175537109375"
+    }, {
+      "id": "fd1410c8-2b1b-462d-8fe4-100015465198",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Book now')])[5]", "xpath:link"],
+        ["xpath=//a[@onclick=\"alert('Clicked `Book now`');\"]", "xpath:attributes"],
+        ["xpath=//div[@id='popup']/div/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[21]", "xpath:href"],
+        ["xpath=//div[2]/a[2]", "xpath:position"]
+      ],
+      "value": "54,25.86175537109375"
+    }, {
+      "id": "f5e6e6e7-98e1-4544-9872-6235545ff690",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Book now')])[5]", "xpath:link"],
+        ["xpath=//a[@onclick=\"alert('Clicked `Book now`');\"]", "xpath:attributes"],
+        ["xpath=//div[@id='popup']/div/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[21]", "xpath:href"],
+        ["xpath=//div[2]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "696b47bd-f780-466c-8ca8-47c393c294b8",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Clicked `Book now`",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "927d8f09-4145-4e80-8ad0-5ad4e3640b23",
+    "name": "Assert Card Pictures_Card Picture 2",
+    "commands": [{
+      "id": "fc022fd2-4d1e-4634-b688-83e9ef1a9f7e",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.moraru.md/qa/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "888ec9c8-fc20-4b88-bd2b-4f807365537b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.card__heading-span",
+      "targets": [
+        ["css=.navigation__item:nth-child(2) > .navigation__link", "css:finder"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28aa2440-bad4-4e07-a725-afccf0310e71",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.card__heading-span--2",
+      "targets": [
+        ["css=body > div:nth-child(3)", "css:finder"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": "THE FOREST HIKER"
+    }, {
+      "id": "b631ab19-7596-406d-a528-bd3c38dc674e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.card__details",
+      "targets": [
+        ["css=.navigation__item:nth-child(3) > .navigation__link", "css:finder"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "409316b7-7157-4383-a9a2-48e99cdc11fe",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.card__heading-span--2",
+      "targets": [
+        ["css=.card__heading-span--2", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div[2]/div/div/h4/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/h4/span", "xpath:position"]
+      ],
+      "value": "THE FOREST HIKER"
+    }, {
+      "id": "040e1a69-c97d-47bc-911d-17f9a05575e4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-1-of-3:nth-child(2) li:nth-child(1)",
+      "targets": [
+        ["css=.col-1-of-3:nth-child(2) li:nth-child(1)", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div[2]/div/div/div[2]/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'7 day tours')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "10373577-307b-43b9-bec0-c97a5656383f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-1-of-3:nth-child(2) li:nth-child(1)",
+      "targets": [],
+      "value": "7 day tours"
+    }, {
+      "id": "795f4067-3820-4f92-a4f3-e6a5e34eafbd",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-1-of-3:nth-child(2) li:nth-child(2)",
+      "targets": [
+        ["css=.col-1-of-3:nth-child(2) li:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div[2]/div/div/div[2]/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Up to 40 people')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44679a0d-3a9c-4ee3-980c-851ed6cbed6d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-1-of-3:nth-child(2) li:nth-child(2)",
+      "targets": [],
+      "value": "Up to 40 people"
+    }, {
+      "id": "3e3a7d16-f335-4033-a912-f70b62f5c8a3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-1-of-3:nth-child(2) li:nth-child(3)",
+      "targets": [
+        ["css=.col-1-of-3:nth-child(2) li:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div[2]/div/div/div[2]/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Up to 40 people')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fae6cd3-2c1f-487a-85f7-8e3346aa7795",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-1-of-3:nth-child(2) li:nth-child(3)",
+      "targets": [],
+      "value": "6 tour guides"
+    }, {
+      "id": "4b8f9a76-a9d0-4769-80e2-10c858ab72be",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-1-of-3:nth-child(2) li:nth-child(4)",
+      "targets": [
+        ["css=.col-1-of-3:nth-child(2) li:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div[2]/div/div/div[2]/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Up to 40 people')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "56ffebb5-d18d-4649-b690-8596d9881246",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-1-of-3:nth-child(2) li:nth-child(4)",
+      "targets": [],
+      "value": "Sleep in provided tents"
+    }, {
+      "id": "d35d6216-3dfa-450e-a2fe-f892d663bbc4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.card__side--back-2 .card__price-only",
+      "targets": [
+        ["css=.card__side--back-1 .card__price-only", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div/div/div[2]/div/div/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f11c1d09-30ba-4958-9c9c-69f4f5bc33fb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.card__side--back-2 .card__price-only",
+      "targets": [],
+      "value": "ONLY"
+    }, {
+      "id": "d3f3d27f-dc0f-469f-9ac8-86cea2baecf7",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.card__side--back-2 .card__price-value",
+      "targets": [
+        ["css=.card__side--back-1 .card__price-value", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div/div/div[2]/div/div/p[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'$297')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e3fef2f-fa1d-425a-8eb9-48eb35be90f1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.card__side--back-2 .card__price-value",
+      "targets": [],
+      "value": "$497"
+    }, {
+      "id": "34abdca9-179b-47f5-90d6-9a9763939377",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.card__side--back-2 .btn",
+      "targets": [
+        ["css=.card__side--back-1 .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Book now!')]", "xpath:link"],
+        ["xpath=//section[@id='section-tours']/div[2]/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#popup')]", "xpath:href"],
+        ["xpath=//div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66ab3017-4a8f-416f-86a5-a05de4144ab5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.card__side--back-2 .btn",
+      "targets": [],
+      "value": "BOOK NOW!"
+    }, {
+      "id": "f80bf800-8753-4c1d-a0d9-4e32aead6214",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card__side--back-2 .btn",
+      "targets": [
+        ["css=.card__side--back-2 .btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'Book now!')])[2]", "xpath:link"],
+        ["xpath=//section[@id='section-tours']/div[2]/div[2]/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#popup')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d43224b-fe40-4dcd-942b-21588adb6518",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Book now')])[5]", "xpath:link"],
+        ["xpath=//a[@onclick=\"alert('Clicked `Book now`');\"]", "xpath:attributes"],
+        ["xpath=//div[@id='popup']/div/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[21]", "xpath:href"],
+        ["xpath=//div[2]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f04756a8-ff80-46fe-8238-66816cc50464",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Clicked `Book now`",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5d56c193-418b-4bf0-89cb-6dda2be2d816",
+    "name": "Assert Card Pictures_Card Picture 3",
+    "commands": [{
+      "id": "d0f58c6d-9319-4337-938f-3ad263dc5ee3",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.moraru.md/qa/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c33c8cb4-51ef-4ab1-b2d3-6f98e7705f32",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.card__heading-span",
+      "targets": [
+        ["css=.navigation__item:nth-child(2) > .navigation__link", "css:finder"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1664d9a0-5a47-468c-9a68-6784a9d90a52",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.card__heading-span--3",
+      "targets": [
+        ["css=body > div:nth-child(3)", "css:finder"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": "THE SNOW ADVENTURER"
+    }, {
+      "id": "88737007-6779-4000-b319-bea569e191d5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.card__details",
+      "targets": [
+        ["css=.navigation__item:nth-child(3) > .navigation__link", "css:finder"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce0132b0-d152-4cea-89b4-f084273d2c82",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-1-of-3:nth-child(3) li:nth-child(1)",
+      "targets": [
+        ["css=.col-1-of-3:nth-child(1) li:nth-child(1)", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div/div/div/div[2]/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'3 day tours')]", "xpath:innerText"]
+      ],
+      "value": "5 day tours"
+    }, {
+      "id": "5f95291c-0a96-4c0d-9c43-6583c488ee59",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-1-of-3:nth-child(3) li:nth-child(2)",
+      "targets": [
+        ["css=.col-1-of-3:nth-child(2) li:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div[2]/div/div/div[2]/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Up to 40 people')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "031028cb-f488-4691-9e9c-013ee72946ee",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-1-of-3:nth-child(3) li:nth-child(2)",
+      "targets": [
+        ["css=.col-1-of-3:nth-child(1) li:nth-child(1)", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div/div/div/div[2]/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'3 day tours')]", "xpath:innerText"]
+      ],
+      "value": "Up to 15 people"
+    }, {
+      "id": "3ba478f5-4812-440f-a45f-0833b72f528b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-1-of-3:nth-child(3) li:nth-child(3)",
+      "targets": [
+        ["css=.col-1-of-3:nth-child(2) li:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div[2]/div/div/div[2]/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Up to 40 people')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d637e608-8330-4adc-a839-c788e3fed4ff",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-1-of-3:nth-child(3) li:nth-child(3)",
+      "targets": [
+        ["css=.col-1-of-3:nth-child(1) li:nth-child(1)", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div/div/div/div[2]/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'3 day tours')]", "xpath:innerText"]
+      ],
+      "value": "3 tour guides"
+    }, {
+      "id": "db89db8d-442e-4952-ad5c-84b3dd3eee22",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-1-of-3:nth-child(3) li:nth-child(4)",
+      "targets": [
+        ["css=.col-1-of-3:nth-child(2) li:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div[2]/div/div/div[2]/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Up to 40 people')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "475cb4d3-66d5-4188-a678-891312641e9d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-1-of-3:nth-child(3) li:nth-child(4)",
+      "targets": [
+        ["css=.col-1-of-3:nth-child(1) li:nth-child(1)", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div/div/div/div[2]/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'3 day tours')]", "xpath:innerText"]
+      ],
+      "value": "Sleep in provided tents"
+    }, {
+      "id": "4e6c52f5-8d10-4c39-828c-b93948f431ee",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.card__side--back-3 .card__price-only",
+      "targets": [
+        ["css=.card__side--back-1 .card__price-only", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div/div/div[2]/div/div/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb7ee985-cd38-43ce-abb4-efbcee7298a9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.card__side--back-3 .card__price-only",
+      "targets": [
+        ["css=.card__side--back-1 .card__price-only", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div/div/div[2]/div/div/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/p", "xpath:position"]
+      ],
+      "value": "ONLY"
+    }, {
+      "id": "5c526fd2-5532-4b04-820f-96a50bf0664c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.card__side--back-3 .card__price-value",
+      "targets": [
+        ["css=.card__side--back-1 .card__price-value", "css:finder"],
+        ["xpath=//section[@id='section-tours']/div[2]/div/div/div[2]/div/div/p[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'$297')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e11d10aa-a312-406b-8675-0a029bd0017f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.card__side--back-3 .card__price-value",
+      "targets": [],
+      "value": "$897"
+    }, {
+      "id": "1f0391f5-c13b-4543-b4f2-1cccee1cac3e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.card__side--back-3 .btn",
+      "targets": [
+        ["css=.card__side--back-1 .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Book now!')]", "xpath:link"],
+        ["xpath=//section[@id='section-tours']/div[2]/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#popup')]", "xpath:href"],
+        ["xpath=//div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ce6439d-f598-473b-8d52-ec7ebc9b7911",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.card__side--back-3 .btn",
+      "targets": [],
+      "value": "BOOK NOW!"
+    }, {
+      "id": "599f4284-67d8-40bb-83fe-db444fe87fa0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card__side--back-3 .btn",
+      "targets": [
+        ["css=.card__side--back-3 .btn", "css:finder"],
+        ["xpath=(//a[contains(text(),'Book now!')])[3]", "xpath:link"],
+        ["xpath=//section[@id='section-tours']/div[2]/div[3]/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#popup')])[3]", "xpath:href"],
+        ["xpath=//div[3]/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98cc1ce9-c748-4a40-9c0c-b521658f7a09",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.popup__right",
+      "targets": [
+        ["css=.popup__right", "css:finder"],
+        ["xpath=//div[@id='popup']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3c78916-b168-4871-ad37-04b27cc36658",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Book now')])[5]", "xpath:link"],
+        ["xpath=//a[@onclick=\"alert('Clicked `Book now`');\"]", "xpath:attributes"],
+        ["xpath=//div[@id='popup']/div/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[21]", "xpath:href"],
+        ["xpath=//div[2]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df137be2-d921-4ef1-b844-e8dcef9c6f4e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.popup__right",
+      "targets": [
+        ["css=.popup__right", "css:finder"],
+        ["xpath=//div[@id='popup']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e03a972-2db8-4a5b-8e30-c1c33aa6ed2a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Book now')])[5]", "xpath:link"],
+        ["xpath=//a[@onclick=\"alert('Clicked `Book now`');\"]", "xpath:attributes"],
+        ["xpath=//div[@id='popup']/div/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[21]", "xpath:href"],
+        ["xpath=//div[2]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2fa4aa2-7a07-4bef-bd3d-465a1bf93f6a",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Clicked `Book now`",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "340ef773-b13f-417a-a278-5dfba6babda9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Book now')])[5]", "xpath:link"],
+        ["xpath=//a[@onclick=\"alert('Clicked `Book now`');\"]", "xpath:attributes"],
+        ["xpath=//div[@id='popup']/div/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[21]", "xpath:href"],
+        ["xpath=//div[2]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "897d6b3c-4ab3-43af-9143-b1ac86382bbc",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["57ea8e3c-05f9-4abc-b931-04b08d440ddf"]
+  }],
+  "urls": ["http://www.moraru.md/qa/"],
+  "plugins": []
+}
