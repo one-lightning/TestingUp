@@ -1186,6 +1186,449 @@
       ],
       "value": ""
     }]
+  }, {
+    "id": "ee3eb0dd-8eeb-4932-a94b-6dd4394a9d70",
+    "name": "Assert Discover All Tours Btn",
+    "commands": [{
+      "id": "5711d140-cf97-4c19-a37f-e8c610bc30e3",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.moraru.md/qa/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d8eb73c-b3ba-4209-b332-abd26bd2a955",
+      "comment": "",
+      "command": "click",
+      "target": "css=.u-center-text > .btn",
+      "targets": [
+        ["css=.u-center-text > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Discover all tours')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"alert('Clicked `Discover all tours`');\"]", "xpath:attributes"],
+        ["xpath=//section[@id='section-tours']/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[11]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4f88f7f-2faf-404d-a6b1-8498ee939e0b",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Clicked `Discover all tours`",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c28c0b69-b14f-4f6d-93f9-e50a683c473d",
+    "name": "Assert Heading-Secondary",
+    "commands": [{
+      "id": "43431f24-8f3c-42c0-8b28-fa0cdf6e30c9",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.moraru.md/qa/#",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ac20876-31f4-483c-a534-eeb7df94f895",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.u-center-text:nth-child(2) > .heading-secondary",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4e027ca7-a592-4e79-8d20-1607e437b6bd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.u-center-text:nth-child(2) > .heading-secondary",
+      "targets": [],
+      "value": "WE MAKE PEOPLE GENUINELY HAPPY"
+    }]
+  }, {
+    "id": "db541e35-3410-4aea-8f29-c83c009af7f7",
+    "name": "Assert Heading-Tertiary",
+    "commands": [{
+      "id": "e91d214d-dc89-4b39-82fe-1aa3effa7f2a",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.moraru.md/qa/#",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "995f1fd2-9198-4cfe-97f1-306106dce972",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.row:nth-child(3) .heading-tertiary",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f4f9b107-ba8d-40a7-8f02-b0f511b1d59b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.row:nth-child(3) .heading-tertiary",
+      "targets": [],
+      "value": "I HAD THE BEST WEEK EVER WITH MY FAMILY"
+    }, {
+      "id": "00ca5d3d-cfe3-41d6-b8dd-d9f4ce34b0db",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(4) .heading-tertiary",
+      "targets": [
+        ["css=.row:nth-child(4) .heading-tertiary", "css:finder"],
+        ["xpath=//div[4]/div/div/h3", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc8fec2a-bde2-47b6-afb1-43639f1918eb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.row:nth-child(4) .heading-tertiary",
+      "targets": [],
+      "value": "WOW! MY LIFE IS COMPLETELY DIFFERENT NOW"
+    }]
+  }, {
+    "id": "fb2cd7d4-6279-4850-a48a-fb17e8596f70",
+    "name": "Assert NavigationLink",
+    "commands": [{
+      "id": "0ec1b928-cd3b-481e-acf3-eddc150e47d7",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.moraru.md/qa/#",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d73ba913-9d09-4404-9ba3-6a06762f1a2a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Read all stories →",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9393329-29fb-48c0-b031-2de3eb246605",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Read all stories →",
+      "targets": [],
+      "value": "Read all stories →"
+    }, {
+      "id": "a3203865-f5fc-4f92-9e00-b6a0c798dddf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Read all stories →",
+      "targets": [
+        ["linkText=Read all stories →", "linkText"],
+        ["css=.btn-text:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Read all stories →')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"alert('Clicked `Read all stories`');\"]", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[12]", "xpath:href"],
+        ["xpath=//div[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Read all stories →')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc96d315-3239-4236-8543-700c4e5ce436",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Clicked `Read all stories`",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4ed7604e-e68f-49ee-9639-090b8817b6b2",
+    "name": "Navigation_Link",
+    "commands": [{
+      "id": "2633dbd9-8b6e-40b7-a821-a70990ce054c",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.moraru.md/qa/#",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb33bcd8-fbd9-4b5c-bf7f-51eb9b3bb1f6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.u-margin-bottom-medium > .heading-secondary",
+      "targets": [
+        ["css=.u-margin-bottom-medium > .heading-secondary", "css:finder"],
+        ["xpath=//form/div/h2", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "271f0eda-f85b-4a0a-a4f4-e1d8b6b87497",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.u-margin-bottom-medium > .heading-secondary",
+      "targets": [
+        ["css=.u-margin-bottom-medium > .heading-secondary", "css:finder"],
+        ["xpath=//form/div/h2", "xpath:position"]
+      ],
+      "value": "START BOOKING NOW"
+    }]
+  }, {
+    "id": "07bc2aa1-c242-4346-b2b8-55bdc27d95ed",
+    "name": "Assert Form Group",
+    "commands": [{
+      "id": "add656ef-0a28-4f80-9231-8fcaea7ef448",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.moraru.md/qa/#",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5747cf4-a98c-45d4-89c4-d56440c85a93",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.navigation__item:nth-child(2) > .navigation__link",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb75cf6a-f196-41d9-8698-4055dcc9a583",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navigation__item:nth-child(2) > .navigation__link",
+      "targets": [
+        ["css=.navigation__item:nth-child(2) > .navigation__link", "css:finder"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31ea13af-73e0-4a02-82f1-3c4dabdd9849",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7463470-ab94-497b-b783-16f9c63eee2b",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "lightn"
+    }, {
+      "id": "ea173a1a-a92d-4923-b04a-f4196a0c8bdf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form__radio-group:nth-child(1) .form__radio-button",
+      "targets": [
+        ["css=.form__radio-group:nth-child(1) .form__radio-button", "css:finder"],
+        ["xpath=//div[4]/div/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49486755-1228-4307-bea8-c62dbf622a27",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form__group > .btn",
+      "targets": [
+        ["css=.form__group > .btn", "css:finder"],
+        ["xpath=//button[@onclick=\"alert('Clicked `something unreadable`');\"]", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4952d02e-daac-42d6-9674-91584d0d78bd",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Clicked `something unreadable`",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21b89284-28a7-4e38-a41e-e3a0156b6cb7",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "-0.600006103515625,3.0001907348632812"
+    }, {
+      "id": "9ccb2a28-5cdb-4e6c-955a-56dcd5ff1fe9",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "087535f0-5ef7-45d2-8cfc-a759157de03c",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "2@gmai"
+    }, {
+      "id": "a3bb9a1c-4063-4f4a-8ccc-d767cfcccf35",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form__group > .btn",
+      "targets": [
+        ["css=.form__group > .btn", "css:finder"],
+        ["xpath=//button[@onclick=\"alert('Clicked `something unreadable`');\"]", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "90f94c66-64a8-4056-81e5-9ce8395df759",
+    "name": "Assert Footer Copyright",
+    "commands": [{
+      "id": "73a6ae8b-224e-4820-86b7-57b818e4bc19",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.moraru.md/qa/#",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c972c864-18e1-4d75-b131-ce5d2bf408f5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navigation__item:nth-child(3) > .navigation__link",
+      "targets": [
+        ["css=.navigation__item:nth-child(3) > .navigation__link", "css:finder"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2275366-fb5f-4386-87c5-c21da6bd426f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navigation__item:nth-child(3) > .navigation__link",
+      "targets": [
+        ["css=.navigation__item:nth-child(3) > .navigation__link", "css:finder"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5245b74-6dd9-4121-b489-c1c5d85e48f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer__navigation",
+      "targets": [
+        ["css=.footer__navigation", "css:finder"],
+        ["xpath=//footer/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f39b1a5-fbad-4e7b-98fd-bb9ea8694fea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer__item:nth-child(3) > .footer__link",
+      "targets": [
+        ["css=.footer__item:nth-child(3) > .footer__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Carrers')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"alert('Clicked `Carrers`');\"]", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[15]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e343e884-7fbb-4cdf-8f7d-2198b2f22c7a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navigation__item:nth-child(3) > .navigation__link",
+      "targets": [
+        ["css=.navigation__item:nth-child(3) > .navigation__link", "css:finder"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "025143b0-bc39-4949-bc10-79232a9ba512",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer__item:nth-child(5) > .footer__link",
+      "targets": [
+        ["css=.footer__item:nth-child(5) > .footer__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Terms')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"alert('Clicked `Terms`');\"]", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[17]", "xpath:href"],
+        ["xpath=//div/ul/li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c29a7ac-9d2c-4067-a46d-4ca0f12c97cc",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Clicked `Terms`",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5a765f12-9c3e-42e6-9a78-09a79663e06c",
+    "name": "Assert Footer Link",
+    "commands": [{
+      "id": "6b332664-a6bc-463f-9f28-77891e1697d6",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.moraru.md/qa/#",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0956c256-65fe-40c7-aed9-c161ed41deab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer__copyright > .footer__link:nth-child(1)",
+      "targets": [
+        ["css=.footer__copyright > .footer__link:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Jonas Schmedtmann')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"alert('Clicked `Jonas Schmedtmann`');\"]", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[18]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2f2bb91-0417-4142-a2b3-3ce7e30e3b05",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Clicked `Jonas Schmedtmann`",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "429c2315-87d6-4049-89aa-6f1adcf8536e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer__link:nth-child(2)",
+      "targets": [
+        ["css=.footer__link:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Advanced CSS and Sass')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"alert('Clicked `Advanced CSS and Sass`');\"]", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[19]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9823336a-45a1-4a17-9456-8edf77b488f9",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Clicked `Advanced CSS and Sass`",
+      "targets": [],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "897d6b3c-4ab3-43af-9143-b1ac86382bbc",
