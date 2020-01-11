@@ -1,0 +1,1 @@
+SELECT * FROM bdo.players JOIN bdo.playerstats ON bdo.players.ID = bdo.playerstats.ID;
